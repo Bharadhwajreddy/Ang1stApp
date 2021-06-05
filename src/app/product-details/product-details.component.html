@@ -5,7 +5,7 @@
       <div class="card-body">
         <h5 class="card-title">{{productObject.productTitle}}</h5>
         <p class="card-text">{{productObject.Description}}</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <button href="#" class="btn btn-primary" (click)= 'sendProductData(productObject.productTitle)' > Add Product</button>
       </div>
     </div>
     

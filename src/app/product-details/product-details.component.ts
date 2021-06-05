@@ -1,4 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, Output,EventEmitter } from '@angular/core';
+
 import { productDetails } from 'src/models/productDetails';
 
 
@@ -14,5 +15,12 @@ export class ProductDetailsComponent  {
     Description:'hello hii lorem ipsum',
     productImage:'https://image.shutterstock.com/image-photo/two-green-brinal-three-white-260nw-386559169.jpg'
      }  
+
+   @Output()  myevent=new EventEmitter()
+
+  sendProductData(a:string){
+    this.myevent.emit(a)
+
+  }
 
 }

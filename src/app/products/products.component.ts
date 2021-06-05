@@ -41,4 +41,13 @@ products:productDetails[] = [
   }
 
 ]
+  productDataReceived:any[] =[];
+  productCount=0
+
+ getProductData(a:any){
+   this.productDataReceived.push(a)
+   this.productCount++
+ }
+
+
 }
