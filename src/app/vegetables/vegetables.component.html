@@ -1,0 +1,12 @@
+<div class="text-center text-white">
+    <h3>No.of products added :{{productCount}}</h3>
+    
+    <span *ngFor = "let tittle of productDataReceived">{{tittle }},</span>
+</div>
+
+
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 mt-5 mb-5 ">
+    <div class="col" *ngFor="let p of vegetables">
+        <app-product-details [productObject]=p (myevent)=" getProductData($event)"  ></app-product-details>
+    </div>
+</div>

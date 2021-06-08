@@ -1,12 +1,28 @@
-<div class="text-center text-white">
-<h3>No.of products added :{{productCount}}</h3>
+<div class="row">
+  <div class="col-sm-2 col-md-3"></div>
 
-<span *ngFor = "let tittle of productDataReceived">{{tittle }},</span>
-</div>
-<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 mt-5 mb-5 ">
-    <div class="col" *ngFor="let p of products">
-        <app-product-details [productObject]=p (myevent)="getProductData($event)" ></app-product-details>
-    </div>
-</div>
-    
+  <div class="col-sm-8 col-md-6">
+    <ul class="nav nav-tabs " id="tabs">
+      <li class="nav-item">
+        <a class="nav-link"  routerLink="vegetables" routerLinkActive="active">Vegetables</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="fruits" routerLinkActive="active">Fruits</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="groceries" routerLinkActive="active">Groceries</a>
+      </li>
+      
+    </ul>
 
+
+  </div>
+  
+  <div class="col-sm-2 col-md-3"></div>
+
+
+
+  <div class="container">
+    <router-outlet></router-outlet>
+   </div>
+</div>

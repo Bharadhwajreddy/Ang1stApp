@@ -4,3 +4,7 @@ a{
     font-weight: bold;
 }
 
+#navbarNav{
+    position:sticky;
+    top:0;
+}
