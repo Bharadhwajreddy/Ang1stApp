@@ -14,7 +14,17 @@ export class VegetablesComponent implements OnInit {
   constructor(private vegobj:VegetablesDataService) { }
 
   ngOnInit(): void {
-  this.vegetables=this.vegobj.getVegetablesData()
+    
+    // subscribe to get data from obseravable
+    // here getmobileData returns observable so subscribe is used
+   this.vegobj.getVegetablesData().subscribe(
+     data=>{
+       this.vegetables=data
+     },
+     err=>{
+       console.log('error is ',err)
+     }
+   )
   
   }
 
