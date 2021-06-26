@@ -8,12 +8,14 @@ import { LoginComponent } from './login/login.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ProductsComponent } from './products/products.component';
 import { RegistrationComponent } from './registration/registration.component';
+import { TestComponent } from './test/test.component';
 import { VegetablesComponent } from './vegetables/vegetables.component';
 
 const routes: Routes = [
   { path:'home' , component:HomeComponent},
   { path:'contactus', component:ContactusComponent },
   { path:'login', component: LoginComponent},
+  { path: 'test', component:TestComponent},
   { path:'products', component: ProductsComponent ,
      children:[
       {path:'vegetables' , component: VegetablesComponent},

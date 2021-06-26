@@ -15,6 +15,7 @@ import { VegetablesComponent } from './vegetables/vegetables.component';
 import { FruitsComponent } from './fruits/fruits.component';
 import { GroceriesComponent } from './groceries/groceries.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { TestComponent } from './test/test.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     VegetablesComponent,
     FruitsComponent,
     GroceriesComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule,
